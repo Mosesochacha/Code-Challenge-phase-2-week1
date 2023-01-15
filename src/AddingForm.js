@@ -11,7 +11,7 @@ export default function AddingForm(){
      const [isAdding , setIsAdding] =useState(false)
      
     const handleSubmit = (e)=>{
-        e.preventDefault()
+        
         const transaction =  { date , amount , description,category }
         setIsAdding(true)
         
@@ -20,10 +20,9 @@ export default function AddingForm(){
             headers:{"Content-Type":"application/json"},
             body:JSON.stringify(transaction)
         })
-        .then(()=>{
-            console.log("Added transaction");
-            
-            setIsAdding(false)
+        .then(()=>{            
+           
+          setIsAdding(false)
         })
 
     }

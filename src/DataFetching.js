@@ -9,13 +9,18 @@ const API = " http://localhost:3000/transactions"
     useEffect(()=>{
         axios.get(API)
         .then((resp)=>{
-            console.log(resp);
             setTransanction(resp.data)
         })
     },[])
 
-    const handleSearch = ()=>{
+    const handleSearch = (Search)=>{
+        console.log(Search);
+       let newOutput = transactions.filter((newTransaction)=>{
+        return newTransaction.description.toLowerCase().includes(Search.toLowerCase())
+        
 
+       })
+       setTransanction(newOutput)
     }
     return(
         <div className='BodyForm'>

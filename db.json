@@ -125,6 +125,20 @@
       "description": "income",
       "category": "my working  salary ",
       "id": 18
+    },
+    {
+      "date": "2023-01-10",
+      "amount": "1000",
+      "description": "hello",
+      "category": "my own work",
+      "id": 19
+    },
+    {
+      "date": "2023-01-10",
+      "amount": "1000",
+      "description": "hello",
+      "category": "my own work",
+      "id": 20
     }
   ]
 }
