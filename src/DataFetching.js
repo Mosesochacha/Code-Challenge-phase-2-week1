@@ -13,7 +13,7 @@ const API = " http://localhost:3000/transactions"
         })
     },[])
     return(
-        <div>
+        <div className='BodyForm'>
             
             <table>
               <thead>
@@ -22,6 +22,7 @@ const API = " http://localhost:3000/transactions"
                 <th>DESCRIPTION</th>
                 <th>CATEGORY</th>
                 <th>AMOUNT</th> 
+                <th>Remove</th>
                 </tr>
               </thead>
               <tbody>
@@ -32,6 +33,7 @@ const API = " http://localhost:3000/transactions"
                             <td>{dataObj.description}</td>
                             <td>{dataObj.category}</td>
                             <td>Ksh.{dataObj.amount}</td>
+                            <td> <button onClick={(e)=>{e.target.parentNode.parentNode.remove()}}>Delete</button> </td>
                         </tr>
                     
                     )

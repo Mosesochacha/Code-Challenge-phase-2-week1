@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  font-family: Times New Roman;
+  box-shadow: #61dafb;
+
 }
 table{
   flex-direction: column-reverse;
@@ -34,10 +37,28 @@ tr{
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.Nav{
+  justify-content: space-between;
+  display: flex;
+  
+  
+}
+.Btn{
+  width: 20vh;
+  height: 5vh;
+  margin-top: 3vh;
+  margin-right: 12px;
+  
+}
+.BodyForm{
+  padding: auto;
+  text-align: center;
+}
 .Navbar{
   background-color: #61dafb;
-  text-align: end;
-  direction: flex;
+  display: flex;
+  justify-content: space-between;
+  font-family: Times New Roman;
 }
 
 .App-link {
