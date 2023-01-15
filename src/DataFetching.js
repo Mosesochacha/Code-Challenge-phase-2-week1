@@ -31,7 +31,7 @@ const API = " http://localhost:3000/transactions"
                             <td>{dataObj.date}</td>
                             <td>{dataObj.description}</td>
                             <td>{dataObj.category}</td>
-                            <td>{dataObj.amount}</td>
+                            <td>Ksh.{dataObj.amount}</td>
                         </tr>
                     
                     )
