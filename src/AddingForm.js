@@ -1,4 +1,5 @@
 import React,{useState} from "react";
+import NavBar from "./NavBar";
 const API = " http://localhost:3000/transactions"
 
 export default function AddingForm(){
@@ -28,9 +29,11 @@ export default function AddingForm(){
     }
       
     return(
-        <div>
+            <div>
+               <NavBar/>
+        <div className="Form">
             <h2>Add transaction</h2>
-            <form onSubmit={handleSubmit }>
+            <form onSubmit={handleSubmit } className="FormDiv">
                 <label>Date</label><br/>
                 <input
                   type="date"
@@ -65,11 +68,8 @@ export default function AddingForm(){
                 /> <br/>
                 { !isAdding && <button>Add transaction</button>}
                 { isAdding && <button>Add new transaction ...</button>}
-                
-                
             </form>
-          
-            
+            </div>
         </div>
     )
 }

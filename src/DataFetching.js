@@ -1,5 +1,6 @@
 import { useState  ,useEffect} from 'react';
 import axios from 'axios';
+import NavBar from './NavBar';
 const API = " http://localhost:3000/transactions"
 
  export default function DataFetching(){
@@ -12,9 +13,13 @@ const API = " http://localhost:3000/transactions"
             setTransanction(resp.data)
         })
     },[])
+
+    const handleSearch = ()=>{
+
+    }
     return(
         <div className='BodyForm'>
-            
+            <NavBar handleSearch={handleSearch}/>
             <table>
               <thead>
                 <tr>

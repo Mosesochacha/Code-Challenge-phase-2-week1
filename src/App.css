@@ -4,16 +4,42 @@
   box-shadow: #61dafb;
 
 }
+.Form{
+  margin-left: 70vh;
+  background-color: antiquewhite;
+  flex-direction: column;
+  width: 50vh;
+  display: flex;
+  border: 1vh;
+  box-shadow: -3px -3px 7px whitesmoke, 3px 3px 5px blueviolet;
+
+  
+}
+.FornDiv{
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 12vh;
+}
 table{
+  margin: auto;
+  width: 80em;
   flex-direction: column-reverse;
   background-color: #61dafb;
   border: 1px solid;
   
   
 }
+.Container{
+  background-color: black;
+}
 
 tr{
+  text-align: start;
   background-color: blanchedalmond;
+}
+td{
+  padding-left: 1em;
 }
 
 .App-logo {
@@ -53,6 +79,26 @@ tr{
 .BodyForm{
   padding: auto;
   text-align: center;
+}
+.Home{
+  width: 20vh;
+  height: 5vh;
+  margin-top: 3vh;
+  margin-right: 12px;
+}
+
+.Transactions{
+  width: 20vh;
+  height: 5vh;
+  margin-top: 3vh;
+  margin-right: 12px;
+}
+.Input{
+  width: 20vh;
+  height: 4vh;
+  margin-top: 3vh;
+  margin-right: 12px;
+  font-family: Times New Roman;
 }
 .Navbar{
   background-color: #61dafb;
