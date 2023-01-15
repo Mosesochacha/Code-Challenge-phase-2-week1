@@ -39,24 +39,7 @@ const API = " http://localhost:3000/transactions"
               </tbody>
 
             </table>
-            {/* <table>
-                
-                <th>DATE</th>
-                <th>DESCRIPTION</th>
-                <th>CATEGORY</th>
-                <th>AMOUNT</th>
-                
-                {
-                 transactions.map(dataObj=>
-                    <td key={dataObj.id}>
-                        <tr>{dataObj.date}</tr>
-                        <tr>{dataObj.description}</tr>
-                        <tr>{dataObj.category}</tr>
-                        <tr>{dataObj.amount}</tr>
-                    </td>
-                    )
-                }
-            </table> */}
+           
         </div>
     )
 }

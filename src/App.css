@@ -34,6 +34,11 @@ tr{
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.Navbar{
+  background-color: #61dafb;
+  text-align: end;
+  direction: flex;
+}
 
 .App-link {
   color: #61dafb;

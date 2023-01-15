@@ -1,16 +1,29 @@
 import React,{useState} from "react";
-
+const API = " http://localhost:3000/transactions"
 
 export default function AddingForm(){
      const [date , setDate] = useState([])
      const [amount , setAmount] = useState([])
      const [description , setDesciption] = useState([])
      const [category , setCategory] = useState([])
+
+     const [isAdding , setIsAdding] =useState(false)
      
     const handleSubmit = (e)=>{
         e.preventDefault()
         const transaction =  { date , amount , description,category }
-        console.log(transaction);
+        setIsAdding(true)
+        
+        fetch(API ,{
+            method: "POST",
+            headers:{"Content-Type":"application/json"},
+            body:JSON.stringify(transaction)
+        })
+        .then(()=>{
+            console.log("Added transaction");
+            
+            setIsAdding(false)
+        })
 
     }
       
@@ -50,7 +63,9 @@ export default function AddingForm(){
                   onChange = {(e)=> setAmount(e.target.value)}
                   placeholder="Enter A mount"
                 /> <br/>
-                <button>Add transaction</button>
+                { !isAdding && <button>Add transaction</button>}
+                { isAdding && <button>Add new transaction ...</button>}
+                
                 
             </form>
           
