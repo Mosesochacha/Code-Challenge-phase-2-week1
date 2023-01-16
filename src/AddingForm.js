@@ -1,6 +1,6 @@
 import React,{useState} from "react";
 import NavBar from "./NavBar"
-const API = " http://localhost:3000/transactions"
+const API = " http://localhost:8001/transactions"
 
 export default function AddingForm(){
      const [date , setDate] = useState([])

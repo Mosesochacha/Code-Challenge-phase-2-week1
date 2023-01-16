@@ -1,7 +1,7 @@
 import { useState  ,useEffect} from 'react';
 import axios from 'axios';
 import NavBar from './NavBar';
-const API = " http://localhost:3000/transactions"
+const API = " http://localhost:8001/transactions"
 
  export default function DataFetching(){
     const [transactions , setTransanction] = useState([])

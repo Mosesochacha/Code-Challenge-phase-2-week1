@@ -104,6 +104,20 @@
       "description": "My rent",
       "category": "Rent ",
       "id": 15
+    },
+    {
+      "date": "2023-01-11",
+      "amount": "1000",
+      "description": "my income",
+      "category": "income",
+      "id": 16
+    },
+    {
+      "date": "2023-01-11",
+      "amount": "100",
+      "description": "my artifiacial",
+      "category": "Artificial",
+      "id": 17
     }
   ]
 }
