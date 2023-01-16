@@ -100,45 +100,10 @@
     },
     {
       "date": "2023-01-04",
-      "amount": "4545445",
-      "description": "45445454544",
-      "category": "4551",
+      "amount": "1200",
+      "description": "My rent",
+      "category": "Rent ",
       "id": 15
-    },
-    {
-      "date": "2023-01-03",
-      "amount": "1000",
-      "description": "tgh",
-      "category": "moses",
-      "id": 16
-    },
-    {
-      "date": "2023-01-03",
-      "amount": "100",
-      "description": "income",
-      "category": "my working  salary ",
-      "id": 17
-    },
-    {
-      "date": "2023-01-03",
-      "amount": "100",
-      "description": "income",
-      "category": "my working  salary ",
-      "id": 18
-    },
-    {
-      "date": "2023-01-10",
-      "amount": "1000",
-      "description": "hello",
-      "category": "my own work",
-      "id": 19
-    },
-    {
-      "date": "2023-01-10",
-      "amount": "1000",
-      "description": "hello",
-      "category": "my own work",
-      "id": 20
     }
   ]
 }

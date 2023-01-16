@@ -1,5 +1,5 @@
 import React,{useState} from "react";
-import NavBar from "./NavBar";
+import NavBar from "./NavBar"
 const API = " http://localhost:3000/transactions"
 
 export default function AddingForm(){
@@ -14,6 +14,7 @@ export default function AddingForm(){
         
         const transaction =  { date , amount , description,category }
         setIsAdding(true)
+        
         
         fetch(API ,{
             method: "POST",

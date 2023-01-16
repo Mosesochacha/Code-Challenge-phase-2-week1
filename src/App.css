@@ -21,8 +21,13 @@
   justify-content: center;
   width: 12vh;
 }
+.Head{
+  font-size: 5vh;
+  
+}
 table{
-  box-shadow: -3px -3px 7px whitesmoke, 3px 3px 5px blueviolet;
+  margin-top: 12vh;
+  box-shadow: -8px -3px 7px 7px whitesmoke, 4px 4px 9px blueviolet ;
   margin: auto;
   width: 80em;
   flex-direction: column-reverse;
@@ -30,6 +35,10 @@ table{
   border: 1px solid;
   
   
+}
+.Img{
+  
+  width: 90px;
 }
 .Container{
   background-color: black;

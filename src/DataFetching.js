@@ -9,14 +9,29 @@ const API = " http://localhost:3000/transactions"
     useEffect(()=>{
         axios.get(API)
         .then((resp)=>{
-            setTransanction(resp.data)
+            // setTransanction(resp.data)
+            sortByCartegory(resp.data)
         })
     },[])
+  function sortByCartegory(data){
+    console.log(data)
+    data.sort((a,b)=>{
+        let categoryA = a.category.toLowerCase();
+        let categoryB = b.category.toLowerCase()
+     if(categoryA < categoryB
+     ) {return -1;}
+     if(categoryA > categoryB
+     ){ return 1;}
+     return 0
+    })
+    setTransanction(data)
+  }
+    
 
     const handleSearch = (Search)=>{
         console.log(Search);
        let newOutput = transactions.filter((newTransaction)=>{
-        return newTransaction.description.toLowerCase().includes(Search.toLowerCase())
+       return newTransaction.description.toLowerCase().includes(Search.toLowerCase())
         
 
        })

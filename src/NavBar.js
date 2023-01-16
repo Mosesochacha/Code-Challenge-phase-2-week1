@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+// import image from "./image/img.webp"
 
 
 export default function NavBar({handleSearch}){
@@ -12,7 +13,8 @@ export default function NavBar({handleSearch}){
   return(
     
     <div className="Navbar">
-      <h2>Bank of Flatiron </h2>
+            {/* <img  className="Img"src={image} alt=""></img> */}
+      <h2 className="Head">Bank of Flatiron </h2>
       <nav className="Nav">
           <a className="Home" href="/home">Home</a>
           <a  className="Transactions" href="/addingForm">Add Transactions</a>
