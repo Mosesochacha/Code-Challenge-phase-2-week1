@@ -5,6 +5,7 @@ import DataFetching from './DataFetching';
 
 
 function App() {
+  console.log(window.location);
   let Component 
   switch(window.location.pathname){
     case "/home":
@@ -20,9 +21,9 @@ function App() {
 
     <div className="App">
       {/* <NavBar/> */}
-      <di className="Container">
+      <div className="Container">
       <Component/>
-      </di>
+      </div>
       
       
 

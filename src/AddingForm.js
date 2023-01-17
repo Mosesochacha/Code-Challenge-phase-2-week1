@@ -1,6 +1,6 @@
 import React,{useState} from "react";
 import NavBar from "./NavBar"
-const API = " http://localhost:8001/transactions"
+const API = "https://testietest.vercel.app/transactions"
 
 export default function AddingForm(){
      const [date , setDate] = useState([])
@@ -11,7 +11,7 @@ export default function AddingForm(){
      const [isAdding , setIsAdding] =useState(false)
      
     const handleSubmit = (e)=>{
-        
+        e.preventDefault()
         const transaction =  { date , amount , description,category }
         setIsAdding(true)
         
@@ -67,7 +67,7 @@ export default function AddingForm(){
                   placeholder="Enter A mount"
                 /> <br/>
                 { !isAdding && <button>Add transaction</button>}
-                { isAdding && <button>Add new transaction ...</button>}
+                { isAdding && <button disabled className="Dis">adding new transaction ...</button>}
             </form>
             </div>
         </div>

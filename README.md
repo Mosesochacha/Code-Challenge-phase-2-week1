@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+## Project title
+    Flatiron bank
+# Getting started
+- In order for you to use the content in this repo ensure you have the following:
+    - Linux
+    - Mac Os
+- To use this repo on your machine you need to clone by either using:
+     - terminal
+     - forking directly from the repo.
+###### Cloning using button labelled forking
+      - click on the the fork button in the top most rigt corner of the github to fork the repo to your own account
+# Installation
+      - install live-server packege from your extension
+      - install package. json by initializing npm by running the following commang in your terminal:
+                      npm init
+      - Then follow the procedure. 
+      - install live-server extension by running the following command
+                      npm i -g json-server   
+##  Deployment
+ To view my application on website click 0n the link below
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+https://code-challenge-phase-2-week1.vercel.app/
+ 
+## Running and testing
+Running the application is very straight forward. You can use the following steps to run the app.
 
-## Available Scripts
+- Before testing this application you need to do the following in your terminal:
 
-In the project directory, you can run:
+        - first run the command below to start your db.json file;
+        
+               npm run  serve 
+               
 
-### `npm start`
+        - secondly open new terminal and run the  command below  to start the server which will open your browser.
+              npm start 
+        -
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+###### Test the application by:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+    -on the top most left corner there is two links (Home ,add transactions)
 
-### `npm test`
+    - Home link allows you to go the page containing the data  its used after searching a particular item using description name you can go back bye clicking on it
+    also after adding transaction you can go back 
+    by clicking it.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    - add transaction link .
+    When you click on it, it desplays the form which allows you to enter the transaction data
+    then click on the button to add the transactions.
 
-### `npm run build`
+## Description
+    This is an independnt project the allows user to add and view the transaction.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Author
+[Moses Ochacha]https://github.com/Mosesochacha/Code-Challenge-phase-2-week1
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## License
 
-### `npm run eject`
+[Apache License 2.0](https://choosealicense.com/licenses/)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Tech Stack
+        - react -app
+        -css
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

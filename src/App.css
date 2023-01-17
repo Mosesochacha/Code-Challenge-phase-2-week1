@@ -5,17 +5,21 @@
 
 }
 .Form{
-  margin-left: 70vh;
+  margin-top: 1vh;
+  margin-left: 85vh;
   background-color: antiquewhite;
   flex-direction: column;
   width: 50vh;
   display: flex;
   border: 1vh;
-  box-shadow: -3px -3px 7px whitesmoke, 3px 3px 5px blueviolet;
+  box-shadow: -3px -3px 7px whitesmoke, 3px 3px 5px blueviolet ,  -8px -3px 4px  blueviolet, 3px 3px 1px blueviolet;
 
   
 }
-.FornDiv{
+.BodyForm{
+  align-content: center;
+}
+.FormDiv{
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
@@ -23,11 +27,15 @@
 }
 .Head{
   font-size: 5vh;
+  margin-left: 18vh;
   
+}
+.Table{
+  margin: 12vh;
 }
 table{
   margin-top: 12vh;
-  box-shadow: -8px -3px 7px 7px whitesmoke, 4px 4px 9px blueviolet ;
+  box-shadow: -8px -3px 7px 7px whitesmoke, 4px 4px 9px blueviolet ,  -8px -3px 7px 7px whitesmoke, 4px 4px 9px blueviolet;
   margin: auto;
   width: 80em;
   flex-direction: column-reverse;
@@ -41,15 +49,23 @@ table{
   width: 90px;
 }
 .Container{
-  background-color: black;
+  box-shadow: -8px -3px 7px 7px whitesmoke, 4px 4px 9px blueviolet , -8px -3px 7px 7px whitesmoke, 4px 4px 9px blueviolet ;
+  margin: auto;
 }
-
+ thead{
+  margin-top: 12vh;
+ }
 tr{
   text-align: start;
   background-color: blanchedalmond;
 }
 td{
   padding-left: 1em;
+}
+.Dis{
+  font: bolder;
+  color: black;
+
 }
 
 .App-logo {

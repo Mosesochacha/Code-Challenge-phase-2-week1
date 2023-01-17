@@ -1,20 +1,26 @@
+// importing component and react nodules
 import { useState  ,useEffect} from 'react';
 import axios from 'axios';
 import NavBar from './NavBar';
-const API = " http://localhost:8001/transactions"
+const API = "https://testietest.vercel.app/transactions"
 
+// fetchinh data
  export default function DataFetching(){
+  // declaring usestate
     const [transactions , setTransanction] = useState([])
 
     useEffect(()=>{
         axios.get(API)
         .then((resp)=>{
             // setTransanction(resp.data)
+           
             sortByCartegory(resp.data)
         })
     },[])
+    // sorting data
   function sortByCartegory(data){
-    console.log(data)
+    
+    
     data.sort((a,b)=>{
         let categoryA = a.category.toLowerCase();
         let categoryB = b.category.toLowerCase()
@@ -27,7 +33,7 @@ const API = " http://localhost:8001/transactions"
     setTransanction(data)
   }
     
-
+// adding a handle search
     const handleSearch = (Search)=>{
         console.log(Search);
        let newOutput = transactions.filter((newTransaction)=>{
@@ -37,10 +43,11 @@ const API = " http://localhost:8001/transactions"
        })
        setTransanction(newOutput)
     }
+    // returning data 
     return(
         <div className='BodyForm'>
             <NavBar handleSearch={handleSearch}/>
-            <table>
+            <table className='Table'>
               <thead>
                 <tr>
                 <th>DATE</th>
