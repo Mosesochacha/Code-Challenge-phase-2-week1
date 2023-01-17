@@ -33,6 +33,16 @@
 .Table{
   margin: 12vh;
 }
+.Dis{
+  width: 30vh;
+  margin-left: 1vh;
+  background-color: red;
+}
+.Able{
+  width: 20vh;
+  margin-left: 12vh;
+  background-color: red;
+}
 table{
   margin-top: 12vh;
   box-shadow: -8px -3px 7px 7px whitesmoke, 4px 4px 9px blueviolet ,  -8px -3px 7px 7px whitesmoke, 4px 4px 9px blueviolet;

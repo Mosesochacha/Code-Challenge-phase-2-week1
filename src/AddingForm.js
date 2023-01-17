@@ -66,7 +66,7 @@ export default function AddingForm(){
                   onChange = {(e)=> setAmount(e.target.value)}
                   placeholder="Enter A mount"
                 /> <br/>
-                { !isAdding && <button>Add transaction</button>}
+                { !isAdding && <button className="Able">Add transaction</button>}
                 { isAdding && <button disabled className="Dis">adding new transaction ...</button>}
             </form>
             </div>
