@@ -10,7 +10,8 @@ export default function AddingForm(){
 
      const [isAdding , setIsAdding] =useState(false)
      
-    const handleSubmit = ()=>{
+    const handleSubmit = (e)=>{
+      e.preventDefault()
         
         const transaction =  { date , amount , description,category }
         setIsAdding(true)
