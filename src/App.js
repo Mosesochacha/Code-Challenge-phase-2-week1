@@ -8,6 +8,9 @@ function App() {
   console.log(window.location);
   let Component 
   switch(window.location.pathname){
+    case "/":
+    Component = DataFetching
+    break
     case "/home":
     Component = DataFetching
     break

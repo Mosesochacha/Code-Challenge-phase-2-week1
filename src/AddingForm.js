@@ -10,8 +10,8 @@ export default function AddingForm(){
 
      const [isAdding , setIsAdding] =useState(false)
      
-    const handleSubmit = (e)=>{
-        e.preventDefault()
+    const handleSubmit = ()=>{
+        
         const transaction =  { date , amount , description,category }
         setIsAdding(true)
         
@@ -66,7 +66,7 @@ export default function AddingForm(){
                   onChange = {(e)=> setAmount(e.target.value)}
                   placeholder="Enter A mount"
                 /> <br/>
-                { !isAdding && <button className="Able">Add transaction</button>}
+                { !isAdding && <button className="Able" href="/home">Add transaction</button>}
                 { isAdding && <button disabled className="Dis">adding new transaction ...</button>}
             </form>
             </div>
